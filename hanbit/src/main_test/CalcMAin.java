@@ -2,7 +2,7 @@ package main_test;
 
 import java.util.Scanner;
 
-import Grademain.Grade;
+import grade.GradeBean;
 import syntax.Calculator;
 
 /**
@@ -29,9 +29,6 @@ public class CalcMAin {
 		//--------------[리턴값 출력]---------------
 		System.out.println(result);
 		
-		System.out.println("총점을 구하시오");
-		Grade grade = new Grade();
-		int total = grade.getTotal(10, 10, 10);
 		
 	}
 
