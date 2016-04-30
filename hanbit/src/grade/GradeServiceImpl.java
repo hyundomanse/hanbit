@@ -11,7 +11,7 @@ public class GradeServiceImpl {
 
 	// 평균 구하기
 	public int getAvg(GradeBean grade) {
-		int avg = (this.getTotal(grade))/4; // (grade.getKor()+grade.getEng()+grade.getMath()) / 3;
+		int avg = (this.getTotal(grade))/3; // (grade.getKor()+grade.getEng()+grade.getMath()) / 3;
 		return avg;
 	}
 
@@ -21,7 +21,7 @@ public class GradeServiceImpl {
 	 * 
 	 */
 	public String getGrade(GradeBean grade) {
-		int avg = (getTotal(grade))/4;  //(grade.getKor()+grade.getEng()+grade.getMath()+grade.getJava()) / 4;
+		int avg = (getTotal(grade))/3;  //(grade.getKor()+grade.getEng()+grade.getMath()+grade.getJava()) / 4;
 		String grd = "";
 		// if (avg >= 90) {
 		// grd = "A";
@@ -36,7 +36,7 @@ public class GradeServiceImpl {
 		// } else {
 		// grd = "F";
 		// }
-		switch (((getTotal(grade))/4)/10) {
+		switch (((getTotal(grade))/3)/10) {
 		case 10:		grd ="A";		break;
 		case 9:			grd ="A";		break;
 		case 8:			grd ="B";		break;
