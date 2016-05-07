@@ -3,7 +3,6 @@ package lotto;
 public class Lotto{
 	private int money, balanceMoney;
 	private int[][] lottos;
-	//int[][] arr;
 	int[] arr;
 	
 	public void setMoney(int money) {
