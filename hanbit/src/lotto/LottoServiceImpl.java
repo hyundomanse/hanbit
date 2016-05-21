@@ -28,7 +28,7 @@ public class LottoServiceImpl implements LottoService {
 				while (true) {
 					int num = bean.getNumber();
 					if (isDuplication(count, num)) {
-						System.out.println("중복된값" + num);
+						//System.out.println("중복된값" + num);     -> 중복된 값 표기
 						continue;
 					}
 					lottos[count][i] = num;
